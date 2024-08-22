@@ -1,3 +1,32 @@
-[gd_scene format=3 uid="uid://bo7vbih7cekrk"]
+[gd_scene load_steps=5 format=3 uid="uid://bo7vbih7cekrk"]
+
+[ext_resource type="Texture2D" uid="uid://cxdo35g81m1vo" path="res://assets/ships/player/player.png" id="1_w6yvq"]
+[ext_resource type="Script" path="res://scripts/player_ship.gd" id="1_yi658"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4713d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_w6yvq")
+}],
+"loop": true,
+"name": &"normal",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rgpah"]
+size = Vector2(47, 39)
 
 [node name="PlayerShip" type="Area2D"]
+position = Vector2(500, 500)
+scale = Vector2(2, 2)
+script = ExtResource("1_yi658")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
+sprite_frames = SubResource("SpriteFrames_4713d")
+animation = &"normal"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_rgpah")
