@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://du7lubuxt3faq"
-path="res://.godot/imported/Space Ships Explosion.png-b8052e102353b4fdf246065c6bb7d7eb.ctex"
+path="res://.godot/imported/spaceshipexplosion.png-80b3cdf2303037f325b0222e029b6bc5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/explosion/Space Ships Explosion.png"
-dest_files=["res://.godot/imported/Space Ships Explosion.png-b8052e102353b4fdf246065c6bb7d7eb.ctex"]
+source_file="res://assets/explosion/spaceshipexplosion.png"
+dest_files=["res://.godot/imported/spaceshipexplosion.png-80b3cdf2303037f325b0222e029b6bc5.ctex"]
 
 [params]
 

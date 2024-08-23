@@ -40,6 +40,7 @@ func start(pos):
 	$CollisionShape2D.disabled = false
 
 func _on_body_entered(body):
-	hide()
+	$AnimatedSprite2D.play("explode")
+	#hide()
 	hit.emit()
 	$CollisionShape2D.set_deferred("disabled", true)

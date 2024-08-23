@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://lh7p6q0236st"]
+
+[ext_resource type="PackedScene" uid="uid://bo7vbih7cekrk" path="res://scenes/player_ship.tscn" id="1_2tto0"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_ygba3"]
+[ext_resource type="PackedScene" uid="uid://3qdnyrtbra00" path="res://scenes/boss.tscn" id="2_ogw0x"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_ygba3")
+
+[node name="PlayerShip" parent="." instance=ExtResource("1_2tto0")]
+
+[node name="PlayerStart" type="Marker2D" parent="."]
+position = Vector2(320, 900)
+
+[node name="Boss" parent="." instance=ExtResource("2_ogw0x")]
+
+[node name="BossStart" type="Marker2D" parent="."]
+position = Vector2(320, 50)

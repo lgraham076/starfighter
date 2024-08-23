@@ -14,3 +14,8 @@ func _process(delta):
 	
 func change_boss(new_level):
 	level = new_level
+	
+func start(pos):
+	position = pos
+	show()
+	$CollisionShape2D.disabled = false
